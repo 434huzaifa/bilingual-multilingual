@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+    {% include "head.html" %}
+
+<body>
+    <!-- Navbar Section Starts-->
+    {% include "navbar.html" %}
+    <!-- Navbar Section Ends -->
+
+    <style>
+        .box{
+            border: 1px solid black;
+            width: fit-content;
+            display: inline-block;
+            margin-left: 10px;
+            border-radius: 5px;
+            
+        }
+        span{
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+       </style>
+        {{s|safe}}
+
+    <!-- CAtegories Section Starts -->
+    <section class="work-category">
+        <div class="container1">
+            <h2 class="text-center">Choose One Catagory</h2>
+
+            <div class="box-3 float-container">
+                <img  center src={% static 'images/mon.jpg' %} alt="Monolingual" class="img-responsive img-curve">
+                
+                <a href="{% url 'monolingual' %}" class="btn1 btn-primary float-text text-white">Monolingual</a>
+              
+            </div>
+            
+            <div class="box-3 float-container">
+                <img src={% static 'images/bili.jpg' %} alt="Bilingual" class="img-responsive img-curve">
+
+                <a href="{% url 'bilingual' %}" class="btn1 btn-primary1 float-text text-white">Bilingual</a>
+                
+            </div>
+            
+
+
+            
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- Categories Section Ends-->
+
+
+    <!-- social Section Starts-->
+    <section class="social">
+        <div class="container text-center">
+            <ul>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- social Section Ends -->
+
+    <!-- footer Section Starts -->
+    <section class="footer">
+        <div class="container text-center">
+            <p>All rights reserved. Designed By <a href="#">Group 2</a></p>
+        </div>
+    </section>
+    <!-- footer Section Ends-->
+
+</body>
+</html>
